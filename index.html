@@ -1,0 +1,101 @@
+<!doctype HTML>
+<html>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+<script src="js/aframe.min.js"></script>
+<script src="js/aframe-ar.js"></script>
+<body style="margin: 0px; overflow: hidden;">
+
+<a-scene embedded vr-mode-ui="enabled: false;" arjs="debugUIEnabled: false;">
+
+    <a-assets>
+        <a-asset-item id="primaria" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/primaria.gltf"></a-asset-item>
+	</a-assets>
+	
+    <a-assets>
+        <a-asset-item id="egb" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/egb.gltf"></a-asset-item>
+	</a-assets>
+
+    <a-assets>
+        <a-asset-item id="secundario" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/secundario.gltf"></a-asset-item>
+	</a-assets>
+
+    <a-assets>
+        <a-asset-item id="polimodal" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/polimodal.gltf"></a-asset-item>
+	</a-assets>
+	
+    <a-assets>
+        <a-asset-item id="terciario" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/terciario.gltf"></a-asset-item>
+	</a-assets>
+
+    <a-assets>
+        <a-asset-item id="universitaria" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/universitaria.gltf"></a-asset-item>
+	</a-assets>
+
+    <a-assets>
+        <a-asset-item id="posgrado" src="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/models/posgrado.gltf"></a-asset-item>
+	</a-assets>
+
+    
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/00.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="0 0 0"
+                    scale="1.10 1.10 1.10"
+                    gltf-model="#primaria" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-01.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="45 0 0"
+                    scale="0.510 0.510 0.510"
+                    gltf-model="#egb" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-02.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="45 0 0"
+                    scale="0.510 0.510 0.510"
+                    gltf-model="#secundario" >
+        </a-entity>
+    </a-marker>
+
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-03.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="45 0 0"
+                    scale="10.510 10.510 10.510"
+                    gltf-model="#polimodal" >
+        </a-entity>
+    </a-marker>
+    
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-04.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="-65 0 0"
+                    scale="20.10 20.10 20.10"
+                    gltf-model="#terciario">                    
+        </a-entity>        
+    </a-marker>
+ 
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-05.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="-65 0 0"
+                    scale="20.10 20.10 20.10"
+                    gltf-model="#univeritaria">                    
+        </a-entity>        
+    </a-marker>
+ 
+    <a-marker type="pattern" url="https://raw.githubusercontent.com/jlmw78/educacion_qr_ar/main/data/pattern-06.patt">
+        <a-entity   position="0 0 0" 
+                    rotation="-65 0 0"
+                    scale="20.10 20.10 20.10"
+                    gltf-model="#posgrado">                    
+        </a-entity>        
+    </a-marker> 
+ 
+ 
+    
+    <a-entity camera></a-entity>
+    
+</a-scene>
+</body>
+</html>
